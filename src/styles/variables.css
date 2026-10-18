@@ -1,0 +1,52 @@
+:root {
+  /* Color Palette: Romantic Black, Red, and Pink with Gold Foil Accents */
+  --bg-deep: #090308;
+  --bg-velvet: #130711;
+  --bg-card: rgba(26, 11, 23, 0.85);
+  --bg-card-border: rgba(255, 117, 143, 0.22);
+  
+  /* Paper & Parchment Tokens for 3D Pop-Outs */
+  --paper-cream: #fffdf9;
+  --paper-aged: #fbf5e9;
+  --paper-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(217, 4, 41, 0.15);
+  --paper-lift: 0 24px 48px rgba(0, 0, 0, 0.6), 0 8px 24px rgba(255, 42, 109, 0.25);
+  
+  /* Romantic Crimson & Rose Gradients */
+  --crimson: #d90429;
+  --crimson-dark: #800020;
+  --rose-vibrant: #ff2a6d;
+  --rose-pink: #ff758f;
+  --rose-blush: #ffb3c6;
+  --rose-soft: #ffe5ec;
+  --rose-glow: 0 0 25px rgba(255, 42, 109, 0.45);
+  
+  /* Gold Foil & Accents */
+  --gold-accent: #f5c869;
+  --gold-dark: #b8860b;
+  --gold-gradient: linear-gradient(135deg, #ffe082 0%, #d4af37 50%, #f9d479 100%);
+  --gold-glow: 0 0 20px rgba(245, 200, 105, 0.4);
+  
+  /* Wax Seal */
+  --wax-red: #a31128;
+  --wax-highlight: #e0264b;
+  --wax-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.35);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-handwriting: 'Dancing Script', cursive;
+  --font-notes: 'Caveat', cursive;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Transitions */
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

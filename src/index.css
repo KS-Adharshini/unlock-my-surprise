@@ -1,0 +1,67 @@
+@import './styles/variables.css';
+@import './styles/animations.css';
+@import './styles/paper3d.css';
+@import './styles/components.css';
+@import './styles/finale.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-deep);
+  color: var(--rose-soft);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Background Atmospheric Glows */
+body {
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(217, 4, 41, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(255, 42, 109, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(245, 200, 105, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, #0d040a 0%, #080206 100%);
+  background-attachment: fixed;
+}
+
+/* Custom Romantic Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #12050f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e102f;
+  border-radius: 999px;
+  border: 2px solid #12050f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d90429;
+}
+
+/* Text Selection */
+::selection {
+  background: #ff2a6d;
+  color: #ffffff;
+}
+
+/* Focus Outline */
+:focus-visible {
+  outline: 2px solid #ff758f;
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+}

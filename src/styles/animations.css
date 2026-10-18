@@ -1,0 +1,134 @@
+/* Romantic Animations & Keyframes */
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(105vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(50vh) translateX(25px) rotate(4deg);
+  }
+  75% {
+    transform: translateY(25vh) translateX(-20px) rotate(-3deg);
+  }
+  95% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-15vh) translateX(15px) rotate(5deg);
+    opacity: 0;
+  }
+}
+
+@keyframes stringWave {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes cuteShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-9px) rotate(-1deg); }
+  40% { transform: translateX(8px) rotate(1deg); }
+  60% { transform: translateX(-6px) rotate(-0.5deg); }
+  80% { transform: translateX(5px) rotate(0.5deg); }
+}
+
+@keyframes heartGlowPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 12px rgba(255, 42, 109, 0.4));
+  }
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 28px rgba(255, 42, 109, 0.85));
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes envelopeFlapOpen {
+  0% {
+    transform: rotateX(0deg);
+    z-index: 5;
+  }
+  100% {
+    transform: rotateX(180deg);
+    z-index: 1;
+  }
+}
+
+@keyframes letterSlideUp {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-130px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sealCrack {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2) rotate(12deg);
+    filter: drop-shadow(0 0 25px #ffd166);
+  }
+  100% {
+    transform: scale(1.4) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes shimmerEffect {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes paperPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(24px) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+}
+
+.anim-cute-shake {
+  animation: cuteShake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.anim-glow-pulse {
+  animation: heartGlowPulse 2.4s infinite ease-in-out;
+}
+
+.anim-float-gentle {
+  animation: floatGentle 4s infinite ease-in-out;
+}
